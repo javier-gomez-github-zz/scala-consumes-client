@@ -1,7 +1,4 @@
-import java.util.UUID
-
 import org.killbill.billing.client.actor.KillBillClient
-import org.killbill.billing.client.model.{InvoiceEmail, AccountEmail, Account}
 import spray.http.{BasicHttpCredentials, HttpHeaders}
 
 /**
@@ -21,6 +18,40 @@ object ScalaAppConsumesClient extends App {
   )
 
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
+
+  /**
+   * Get Tag Definitions
+   */
+//  println(s"Tag Definitions: " + client.getTagDefinitions())
+
+  /**
+   * Get Tag Definition by ID
+   */
+//  println(s"Tag Definition: " + client.getTagDefinition(UUID.fromString("00000000-0000-0000-0000-000000000001")))
+
+  /**
+   * Create Tag Definition
+   */
+//  val objectTypeList: List[ObjectType] = List(ObjectType.ACCOUNT)
+//  val tagDefinition = TagDefinition.apply(None, Option.apply(false), Option.apply("name"), Option.apply("description"), Option.apply(objectTypeList))
+//  val response: String = client.createTagDefinition(tagDefinition.asInstanceOf[TagDefinition])
+//  if (response.contains("201")) {
+//    println(s"Tag Definition created succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+   * Delete a Tag Definition
+   */
+//  val response: String = client.deleteTagDefinition(UUID.fromString("04023d85-51eb-435f-9666-e9896956f40b"))
+//    if (response.contains("204")) {
+//      println(s"Tag Definition deleted succesfully")
+//    }
+//    else {
+//      println(s"An error occurred. Message: " + response)
+//    }
 
   /**
    * Get Account Timeline
