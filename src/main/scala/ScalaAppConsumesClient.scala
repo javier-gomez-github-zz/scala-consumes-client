@@ -20,6 +20,100 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+   * Un-Cancel Subscription
+   */
+//  val response: String = client.unCancelSubscription(UUID.fromString("81585fed-ea4d-40f8-810d-9cc0f6a23c17"))
+//  if (response.contains("200")) {
+//    println(s"Subscription uncancelled succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+   * Cancel Subscription
+   */
+//  val response: String = client.cancelSubscription(UUID.fromString("81585fed-ea4d-40f8-810d-9cc0f6a23c17"))
+//  if (response.contains("200")) {
+//    println(s"Subscription cancelled succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+   * Update Subscription
+   */
+//  val subscription = Subscription.apply(Option.apply("e6f1a070-21d9-44b6-b4d6-b006f1c762ab"), None, Option.apply("312df6b3-452e-460d-ab76-2efc37a3f498"),
+//    Option.apply("sub-kbanman"), None, Option.apply("Sports"), Option.apply(ProductCategory.BASE), Option.apply(BillingPeriod.MONTHLY), None,
+//    Option.apply("DEFAULT"), None, None, None, None, None, None, List[EventSubscription](), List[PhasePriceOverride]())
+//  val response: String = client.updateSubscription(subscription.asInstanceOf[Subscription], UUID.fromString("312df6b3-452e-460d-ab76-2efc37a3f498"))
+//  if (response.contains("200")) {
+//    println(s"Subscription updated succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+   * Create Subscription
+   */
+//  val subscription = Subscription.apply(Option.apply("e6f1a070-21d9-44b6-b4d6-b006f1c762ab"), None, None, Option.apply("sub-kbanman"), None,
+//    Option.apply("Standard"), Option.apply(ProductCategory.BASE), Option.apply(BillingPeriod.ANNUAL), None, Option.apply("DEFAULT"), None,
+//    None, None, None, None, None, List[EventSubscription](), List[PhasePriceOverride]())
+//  val response: String = client.createSubscription(subscription.asInstanceOf[Subscription])
+//  if (response.contains("201")) {
+//    println(s"Subscription created succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+   * Get Subscription by Id
+   */
+//  println(s"Got Subscription: " + client.getSubscriptionById(UUID.fromString("312df6b3-452e-460d-ab76-2efc37a3f498")).asInstanceOf[Subscription])
+  
+  /**
+   * Transfer Bundle to Account
+   */
+//  val bundle = Bundle.apply(Option.apply("65b148ea-a42b-4155-87df-42cfb8394d12"), None, None, None, None)
+//  val response: String = client.transferBundleToAccount(bundle.asInstanceOf[Bundle], UUID.fromString("f6358626-e87b-4201-be29-b0d3c461ae3d"))
+//  if (response.contains("201")) {
+//    println(s"Bundle transferred succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+   * Get Account Bundles
+   */
+//  println("Account Bundles: " + client.getAccountBundles(UUID.fromString("df795e04-ca64-448b-ac01-ab58e8c85d0b"), "sub-jgomez"))
+
+  /**
+   * Search Bundles
+   */
+//  println("Bundles found with SearchKey 'sub-jgomez': " + client.searchBundles("sub-jgomez"))
+
+  /**
+   * Get Bundle by External Key
+   */
+//  val bundle: Bundle = client.getBundleByExternalKey("sub-jgomez").asInstanceOf[Bundle];
+//  println(s"Got Bundle: " + bundle)
+
+  /**
+   * Get Bundle by Id
+   */
+//  val bundle: Bundle = client.getBundleById(UUID.fromString("90bdf03e-287d-4551-b168-5eb303cce151")).asInstanceOf[Bundle];
+//  println(s"Got Bundle: " + bundle)
+
+  /**
+   * Get Bundles
+   */
+//  println(s"Bundles: " + client.getBundles(0, 3))
+
+  /**
    * Get Tag Definitions
    */
 //  println(s"Tag Definitions: " + client.getTagDefinitions())
