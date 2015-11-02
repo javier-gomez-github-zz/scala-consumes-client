@@ -1,3 +1,5 @@
+import java.util.UUID
+
 import org.killbill.billing.client.actor.KillBillClient
 import spray.http.{BasicHttpCredentials, HttpHeaders}
 
@@ -18,6 +20,47 @@ object ScalaAppConsumesClient extends App {
   )
 
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
+
+  /**
+   * Create Invoice
+   */
+//  val response: String = client.createInvoice(UUID.fromString("e6f1a070-21d9-44b6-b4d6-b006f1c762ab"))
+//  if (response.contains("201")) {
+//    println(s"Invoice created succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+   * Search Invoices
+   */
+//  println("Invoices found with SearchKey 'f7fb65d0-87d0-4fbf-a5ca-af47969160ad': " + client.searchInvoices("f7fb65d0-87d0-4fbf-a5ca-af47969160ad"))
+
+  /**
+   * Get Invoices For Account
+   */
+//  println(s"Invoices: " + client.getInvoicesForAccount(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08")))
+
+  /**
+   * Get Invoice by Id or Number
+   */
+//  println(s"Invoice: " + client.getInvoiceByIdOrNumber("1e279598-efaa-40b7-a1ea-92c1efa62d6b"))
+
+  /**
+   * Get Invoice by Number
+   */
+//  println(s"Invoice: " + client.getInvoiceByNumber(7))
+
+  /**
+   * Get Invoice by Id
+   */
+//  println(s"Invoice: " + client.getInvoiceById(UUID.fromString("1e279598-efaa-40b7-a1ea-92c1efa62d6b")))
+
+  /**
+   * Get Invoices
+   */
+//  println(s"Invoices: " + client.getInvoices())
 
   /**
    * Un-Cancel Subscription
