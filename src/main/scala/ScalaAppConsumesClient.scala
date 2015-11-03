@@ -1,6 +1,7 @@
 import java.util.UUID
 
 import org.killbill.billing.client.actor.KillBillClient
+import org.killbill.billing.client.model.{Currency, InvoiceItem}
 import spray.http.{BasicHttpCredentials, HttpHeaders}
 
 /**
@@ -20,6 +21,42 @@ object ScalaAppConsumesClient extends App {
   )
 
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
+
+  /**
+    * Trigger Email Notification for Invoice
+    */
+//  val response: String = client.triggerInvoiceNotification(UUID.fromString("c6c7ac0d-cddf-4a31-b326-ddf2c4682e02"))
+//  if (response.contains("200")) {
+//    println(s"Email Notification triggered succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Create External Charges
+    */
+//  val invoiceItem: InvoiceItem = InvoiceItem.apply(None, None, None, Option.apply("d09e9b20-31b0-4601-b872-8e9fcab7ce08"),
+//    None, None, None, None, None, None, None, None, None, Option.apply(55), Option.apply(Currency.USD))
+//  var externalChargesList = List[InvoiceItem]()
+//  externalChargesList ::= invoiceItem
+//  println("Adding External charge(s): " + client.createExternalCharges(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), "", false, externalChargesList))
+
+  /**
+    * Adjust Invoice Item
+    */
+//  val invoiceItem: InvoiceItem = InvoiceItem.apply(Option.apply("62b91d3e-b2cc-48ff-9644-13b6d635d67e"), None, None,
+//    Option.apply("570f2248-d85b-4235-975b-23607b2b37db"), None, None, None, None, None, None, None, None, None,
+//    Option.apply(35), Option.apply(Currency.USD))
+//  val response: String = client.adjustInvoiceItem(UUID.fromString("ab3ba3cf-c7ae-4f5c-a591-33276fad219d"), "", invoiceItem.asInstanceOf[InvoiceItem])
+//  if (response.contains("201")) {
+//    println(s"Invoice Item adjusted succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  //TODO: Falta createDryRunInvoice()
 
   /**
    * Create Invoice
