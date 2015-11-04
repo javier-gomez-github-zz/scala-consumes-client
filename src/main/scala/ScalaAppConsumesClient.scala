@@ -23,6 +23,144 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+    * Delete Bundle Tag
+    */
+//  val response: String = client.deleteBundleTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("204")) {
+//    println(s"Bundle Tag deleted succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Create Bundle Tag
+    */
+//  val response: String = client.createBundleTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("201")) {
+//    println(s"Bundle Tag added succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Bundle Tags
+    */
+//  println("Get Bundle Tags: " + client.getBundleTags(UUID.fromString("488f3897-7117-4fdc-8c93-32233a449ed6")))
+
+  /**
+    * Delete Account Tag
+    */
+//  val response: String = client.deleteAccountTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("204")) {
+//    println(s"Account Tag deleted succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Create Account Tag
+    */
+//  val response: String = client.createAccountTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("201")) {
+//    println(s"Account Tag added succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Account Tags
+    */
+//  println("Get Account Tags: " + client.getAccountTags(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08")))
+
+  /**
+    * Get All Account Tags
+    */
+//  println("Get All Account Tags: " + client.getAllAccountTags(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08")))
+
+  /**
+    * Search Tags
+    */
+//  println("Tags found with SearchKey 'any': " + client.searchTags("any"))
+
+  /**
+    * Get Tags
+    */
+  //  println("Tags: " + client.getTags())
+
+  /**
+    * Get Overdue State for Account
+    */
+//  println(s"Overdue State for Account: " + client.getOverdueStateForAccount(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08")))
+
+  /**
+    * Get XML Overdue Config
+    */
+//  println(s"Getting XML Overdue Config: " + client.getXMLOverdueConfig())
+
+  /**
+    * Upload XML Overdue Config
+    */
+//  val response: String = client.uploadXMLOverdueConfig("overdueConfigPath")
+//  if (response.contains("200")) {
+//    println(s"XML Overdue uploaded succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Catalog Translation
+    */
+//  println(s"Getting Catalog Translation: " + client.getCatalogTranslation("en_US"))
+
+  /**
+    * Upload Catalog Translation
+    */
+//  val response: String = client.uploadCatalogTranslation("Invoice Template", "en_US")
+//  if (response.contains("200")) {
+//    println(s"Catalog Translation uploaded succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Invoice Translation
+    */
+//    println(s"Getting Invoice Translation: " + client.getInvoiceTranslation("en_US"))
+
+  /**
+    * Upload Invoice Translation
+    */
+//    val response: String = client.uploadInvoiceTranslation("Invoice Template", "en_US")
+//    if (response.contains("200")) {
+//      println(s"Invoice Translation uploaded succesfully")
+//    }
+//    else {
+//      println(s"An error occurred. Message: " + response)
+//    }
+
+  /**
+    * Get Invoice Template
+    */
+//  println(s"Getting Invoice Template: " + client.getInvoiceTemplate(false))
+
+  /**
+    * Upload Invoice Template
+    */
+//  val response: String = client.uploadInvoiceTemplate("Invoice Template", false)
+//  if (response.contains("200")) {
+//    println(s"Invoice Template uploaded succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
     * Trigger Email Notification for Invoice
     */
 //  val response: String = client.triggerInvoiceNotification(UUID.fromString("c6c7ac0d-cddf-4a31-b326-ddf2c4682e02"))
