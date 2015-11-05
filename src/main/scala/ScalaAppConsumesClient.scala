@@ -1,7 +1,7 @@
 import java.util.UUID
 
 import org.killbill.billing.client.actor.KillBillClient
-import org.killbill.billing.client.model.{Credit, Currency, InvoiceItem}
+import org.killbill.billing.client.model._
 import spray.http.{BasicHttpCredentials, HttpHeaders}
 
 /**
@@ -21,6 +21,33 @@ object ScalaAppConsumesClient extends App {
   )
 
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
+
+  /**
+    * Create Combo Payment
+    */
+  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+  val comboPaymentTransaction: ComboPaymentTransaction = ComboPaymentTransaction.apply(Option.apply(paymentTransaction), None)
+  println("Create Combo Payment: " + client.createComboPayment(comboPaymentTransaction))
+
+  /**
+    * Get Payments For Account
+   */
+//  println(s"Payments: " + client.getPaymentsForAccount(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08")))
+
+  /**
+    * Search Payments
+    */
+//  println("Payments found with SearchKey 'e52b4246-a62d-4236-a2ad-e074029932af': " + client.searchPayments("e52b4246-a62d-4236-a2ad-e074029932af"))
+
+  /**
+    * Get Payment by Id
+    */
+//  println("Payment: " + client.getPaymentById(UUID.fromString("717128d2-84e3-4036-b8d3-da06fb37f48b")))
+
+  /**
+    * Get Payments
+    */
+//  println("List Payments: " + client.getPayments())
 
   /**
     * Create Credit
