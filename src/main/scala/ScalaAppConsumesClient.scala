@@ -23,6 +23,87 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+    * Delete Payment Tag
+    */
+//  val response: String = client.deletePaymentTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("204")) {
+//    println(s"Payment Tag deleted succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Create Payment Tag
+    */
+//  val response: String = client.createPaymentTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("201")) {
+//    println(s"Payment Tag added succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Payment Tags
+    */
+//  println("Get Payment Tags: " + client.getPaymentTags(UUID.fromString("488f3897-7117-4fdc-8c93-32233a449ed6")))
+
+  /**
+    * Delete Invoice Tag
+    */
+//  val response: String = client.deleteInvoiceTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("204")) {
+//    println(s"Invoice Tag deleted succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Create Invoice Tag
+    */
+//  val response: String = client.createInvoiceTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("201")) {
+//    println(s"Invoice Tag added succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Invoice Tags
+    */
+//  println("Get Invoice Tags: " + client.getInvoiceTags(UUID.fromString("488f3897-7117-4fdc-8c93-32233a449ed6")))
+
+  /**
+    * Delete Subscription Tag
+    */
+//  val response: String = client.deleteSubscriptionTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("204")) {
+//    println(s"Subscription Tag deleted succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Create Subscription Tag
+    */
+//  val response: String = client.createSubscriptionTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("201")) {
+//    println(s"Subscription Tag added succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Subscription Tags
+    */
+//  println("Get Subscription Tags: " + client.getSubscriptionTags(UUID.fromString("488f3897-7117-4fdc-8c93-32233a449ed6")))
+
+  /**
     * Delete Bundle Tag
     */
 //  val response: String = client.deleteBundleTag(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"), UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
