@@ -1,7 +1,7 @@
 import java.util.UUID
 
 import org.killbill.billing.client.actor.KillBillClient
-import org.killbill.billing.client.model.{Currency, InvoiceItem}
+import org.killbill.billing.client.model.{Credit, Currency, InvoiceItem}
 import spray.http.{BasicHttpCredentials, HttpHeaders}
 
 /**
@@ -21,6 +21,23 @@ object ScalaAppConsumesClient extends App {
   )
 
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
+
+  /**
+    * Create Credit
+    */
+//  val credit: Credit = Credit.apply(Option.apply(300), None, None, None, Option.apply("570f2248-d85b-4235-975b-23607b2b37db"))
+//  val response: String = client.createCredit(credit)
+//  if (response.contains("201")) {
+//    println(s"Credit created succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Credit
+    */
+//  println("Get Credit: " + client.getCredit(UUID.fromString("b954dc3b-3d2b-4e80-8329-b3e89934d9bc")))
 
   /**
     * Delete Payment Tag
