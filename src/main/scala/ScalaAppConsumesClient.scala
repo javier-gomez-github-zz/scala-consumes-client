@@ -23,11 +23,60 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+   * Complete Payment
+   */
+//  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, Option.apply("6ca658fa-ec45-403d-99e8-586a857f5a2b"),
+//    Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("CREDIT"),
+//    None, None, None, None, None, None, None, None, None)
+//  println("Complete Payment: " + client.completePayment(paymentTransaction.asInstanceOf[PaymentTransaction]))
+
+  /**
+   * Create Payment
+   */
+//  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, None, None, None, Option.apply("CREDIT"),
+//    None, None, Option.apply(10), None, None, None, None, None, None)
+//  println("Create Payment: " + client.createPayment(UUID.fromString("25d94f0a-3275-463c-9456-1a7c97f115f8"), null, paymentTransaction.asInstanceOf[PaymentTransaction]))
+
+  /**
+   * Create Invoice Payment
+   */
+//  val invoicePayment: InvoicePayment = InvoicePayment.apply(Option.apply("1d763276-458f-4e7d-a1f7-699a43798522"),
+//      Option.apply("25d94f0a-3275-463c-9456-1a7c97f115f8"), None, None, None, None, None, Option.apply(35), None, None, None, None, None)
+//  val response: String = client.createInvoicePayment(UUID.fromString("1d763276-458f-4e7d-a1f7-699a43798522"), invoicePayment.asInstanceOf[InvoicePayment])
+//  if (response.contains("201")) {
+//    println(s"Invoice Payment created succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+   * Pay All Invoices for Account
+   */
+//  val response: String = client.payAllInvoices(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08"))
+//  if (response.contains("200")) {
+//    println(s"All Invoices paid succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+   * Get Invoice Payment by Invoice Id
+   */
+//  println("Invoice Payments: " + client.getInvoicePayment(UUID.fromString("d79dc8ed-bb9c-4b2b-8b1c-92a11a0f6dad")))
+
+  /**
+   * Get Invoice Payments for Account
+   */
+//  println("Invoice Payments for Account: " + client.getInvoicePaymentsForAccount(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08")))
+
+  /**
     * Create Combo Payment
     */
-  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, None, None, None, None, None, None, None, None, None, None, None, None, None)
-  val comboPaymentTransaction: ComboPaymentTransaction = ComboPaymentTransaction.apply(Option.apply(paymentTransaction), None)
-  println("Create Combo Payment: " + client.createComboPayment(comboPaymentTransaction))
+//  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+//  val comboPaymentTransaction: ComboPaymentTransaction = ComboPaymentTransaction.apply(Option.apply(paymentTransaction), None)
+//  println("Create Combo Payment: " + client.createComboPayment(comboPaymentTransaction))
 
   /**
     * Get Payments For Account
@@ -318,8 +367,6 @@ object ScalaAppConsumesClient extends App {
 //  else {
 //    println(s"An error occurred. Message: " + response)
 //  }
-
-  //TODO: Falta createDryRunInvoice()
 
   /**
    * Create Invoice
