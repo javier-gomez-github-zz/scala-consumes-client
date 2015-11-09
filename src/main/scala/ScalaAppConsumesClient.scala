@@ -23,6 +23,48 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+    * Create Invoice Payment Chargeback
+    */
+//  val invoiceItems: List[InvoiceItem] = List[InvoiceItem]()
+//  val chargebackTransaction: InvoicePaymentTransaction = InvoicePaymentTransaction.apply(Option.apply(false),
+//    Option.apply(invoiceItems), None, None, None, None, None, None, None, Option.apply(20), None, None, None, None,
+//    None, None)
+//  println("Create Invoice Payment Chargeback: " + client.createInvoicePaymentChargeback(UUID.fromString("44c8971d-bd04-490c-919e-53e674851652"), chargebackTransaction))
+
+  /**
+    * Create Invoice Payment Refund
+    */
+//  val invoiceItems: List[InvoiceItem] = List[InvoiceItem]()
+//  val refundTransaction: InvoicePaymentTransaction = InvoicePaymentTransaction.apply(Option.apply(false),
+//    Option.apply(invoiceItems), None, None, None, None, None, None, None, Option.apply(20), None, None, None, None,
+//    None, None)
+//  println("Create Invoice Payment Refund: " + client.createInvoicePaymentRefund(UUID.fromString("44c8971d-bd04-490c-919e-53e674851652"), refundTransaction))
+
+  /**
+    * Process Notification
+    */
+//  println("Process Notification: " + client.processNotification("notification", "pluginName"))
+
+  /**
+    * Build Combo Form Descriptor
+    */
+//  val fieldList: List[PluginProperty] = List[PluginProperty](PluginProperty.apply(Option.apply("test"), Option.apply("test"), Option.apply(false)))
+//  val hostedPaymentPageFields: HostedPaymentPageFields = HostedPaymentPageFields.apply(Option.apply(fieldList))
+//  val account: Account = Account.apply(Option.apply("25d94f0a-3275-463c-9456-1a7c97f115f8"), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+//  val paymentMethod: PaymentMethod = PaymentMethod.apply(Option.apply("0edc8c31-0d2e-48a8-a746-c37c099e467e"), None, None, None, None, None)
+//  val comboHostedPaymentPage: ComboHostedPaymentPage = ComboHostedPaymentPage.apply(Option.apply(hostedPaymentPageFields), Option.apply(account),
+//    Option.apply(paymentMethod), None)
+//  println("Build Combo Form Descriptor: " + client.buildComboFormDescriptor(comboHostedPaymentPage))
+
+  /**
+    * Build Form Descriptor
+    */
+//  val fieldList: List[PluginProperty] = List[PluginProperty](PluginProperty.apply(Option.apply("test"), Option.apply("test"), Option.apply(false)))
+//  val fields: HostedPaymentPageFields = HostedPaymentPageFields.apply(Option.apply(fieldList))
+//  println("Build Form Descriptor: " + client.buildFormDescriptor(fields, UUID.fromString("25d94f0a-3275-463c-9456-1a7c97f115f8"),
+//    UUID.fromString("0edc8c31-0d2e-48a8-a746-c37c099e467e")))
+
+  /**
     * Void Payment
     */
 //  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, Option.apply("6ca658fa-ec45-403d-99e8-586a857f5a2b"),
