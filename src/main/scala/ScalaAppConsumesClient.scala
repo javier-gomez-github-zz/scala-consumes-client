@@ -23,6 +23,38 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+    * Void Payment
+    */
+//  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, Option.apply("6ca658fa-ec45-403d-99e8-586a857f5a2b"),
+//    Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("CREDIT"),
+//    None, None, Option.apply(30), None, None, None, None, None, None)
+//  println("Void Payment: " + client.voidPayment(paymentTransaction.asInstanceOf[PaymentTransaction]))
+
+  /**
+    * Chargeback Payment
+    */
+//  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, Option.apply("6ca658fa-ec45-403d-99e8-586a857f5a2b"),
+//    Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("CREDIT"),
+//    None, None, Option.apply(30), None, None, None, None, None, None)
+//  println("Chargeback Payment: " + client.chargebackPayment(paymentTransaction.asInstanceOf[PaymentTransaction]))
+
+  /**
+    * Refund Payment
+    */
+//  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, Option.apply("6ca658fa-ec45-403d-99e8-586a857f5a2b"),
+//    Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("CREDIT"),
+//    None, None, Option.apply(30), None, None, None, None, None, None)
+//  println("Refund Payment: " + client.refundPayment(paymentTransaction.asInstanceOf[PaymentTransaction]))
+
+  /**
+    * Capture Authorization
+    */
+//  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, Option.apply("6ca658fa-ec45-403d-99e8-586a857f5a2b"),
+//    Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("77e0baf3-81dd-4a4a-be19-dd31a9ed7d51"), Option.apply("CREDIT"),
+//    None, None, Option.apply(30), None, None, None, None, None, None)
+//  println("Capture Authorization: " + client.captureAuthorization(paymentTransaction.asInstanceOf[PaymentTransaction]))
+
+  /**
    * Complete Payment
    */
 //  val paymentTransaction: PaymentTransaction = PaymentTransaction.apply(None, Option.apply("6ca658fa-ec45-403d-99e8-586a857f5a2b"),
