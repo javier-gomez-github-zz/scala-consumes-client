@@ -23,6 +23,37 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+    * Create Payment Method
+    */
+//  val paymentMethod: PaymentMethod = PaymentMethod.apply(None, None, None, None, Option.apply("__EXTERNAL_PAYMENT__"), None)
+//  println("Create Payment Method: " + client.createPaymentMethod(UUID.fromString("c0c2b350-6bad-4d5d-86fd-743aae692f06"), paymentMethod))
+
+  /**
+    * Get Payment Methods For Account
+    */
+//  println(s"Payment Methods for Account: " + client.getPaymentMethodsForAccount(UUID.fromString("d09e9b20-31b0-4601-b872-8e9fcab7ce08")))
+
+  /**
+    * Search Payment Methods
+    */
+//  println("Payment Methods found with SearchKey '__EXTERNAL_PAYMENT__': " + client.searchPaymentMethods("__EXTERNAL_PAYMENT__"))
+
+  /**
+    * Get Bundle by External Key
+    */
+//  println(s"Got Payment Method: " + client.getPaymentMethodByExternalKey("0edc8c31-0d2e-48a8-a746-c37c099e467e").asInstanceOf[PaymentMethod])
+
+  /**
+    * Get Payment Method by Id
+    */
+//  println(s"Got Payment Method: " + client.getPaymentMethodById(UUID.fromString("0edc8c31-0d2e-48a8-a746-c37c099e467e")).asInstanceOf[PaymentMethod])
+
+  /**
+    * Get Payment Methods
+    */
+//    println(s"Payment Methods: " + client.getPaymentMethods())
+
+  /**
     * Create Invoice Payment Chargeback
     */
 //  val invoiceItems: List[InvoiceItem] = List[InvoiceItem]()
