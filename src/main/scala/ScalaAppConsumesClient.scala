@@ -23,6 +23,48 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+    * Delete Payment Method Custom Fields
+    */
+//  println("Delete Payment Method Custom Fields: " + client.deletePaymentMethodCustomFields(UUID.fromString("b17298d2-37fc-4701-8b9d-92ab1d15f01c")))
+
+  /**
+    * Create Payment Method Custom Fields
+    */
+//  val customFields: List[CustomField] = List[CustomField](CustomField.apply(None, None, None, Option.apply("name"), Option.apply("value")))
+//  println("Create Payment Method Custom Fields: " + client.createPaymentMethodCustomFields(UUID.fromString("b17298d2-37fc-4701-8b9d-92ab1d15f01c"), customFields))
+
+  /**
+    * Get Payment Method Custom Fields
+    */
+//  println("Get Payment Method Custom Fields: " + client.getPaymentMethodCustomFields(UUID.fromString("b17298d2-37fc-4701-8b9d-92ab1d15f01c")))
+
+  /**
+    * Delete Account Custom Fields
+    */
+//  println("Delete Account Custom Fields: " + client.deleteAccountCustomFields(UUID.fromString("c0c2b350-6bad-4d5d-86fd-743aae692f06")))
+
+  /**
+    * Create Account Custom Fields
+    */
+//  val customFields: List[CustomField] = List[CustomField](CustomField.apply(None, None, None, Option.apply("name"), Option.apply("value")))
+//  println("Create Account Custom Fields: " + client.createAccountCustomFields(UUID.fromString("c0c2b350-6bad-4d5d-86fd-743aae692f06"), customFields))
+
+  /**
+    * Get Account Custom Fields
+    */
+//  println("Get Account Custom Fields: " + client.getAccountCustomFields(UUID.fromString("c0c2b350-6bad-4d5d-86fd-743aae692f06")))
+
+  /**
+    * Search Custom Fields
+    */
+//  println("Custom Fields found with SearchKey 'anyKey': " + client.searchCustomFields("anyKey"))
+
+  /**
+    * Get Custom Fields
+    */
+//    println(s"Custom Fields: " + client.getCustomFields())
+
+  /**
     * Delete Payment Method
     */
 //  println("Delete Payment Method: " + client.deletePaymentMethod(UUID.fromString("b17298d2-37fc-4701-8b9d-92ab1d15f01c")))
