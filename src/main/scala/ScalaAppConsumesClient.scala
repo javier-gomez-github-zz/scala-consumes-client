@@ -23,6 +23,17 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+    * Delete Payment Method
+    */
+//  println("Delete Payment Method: " + client.deletePaymentMethod(UUID.fromString("b17298d2-37fc-4701-8b9d-92ab1d15f01c")))
+
+  /**
+    * Update Payment Method
+    */
+//  println("Update Payment Method: " + client.updatePaymentMethod(UUID.fromString("25d94f0a-3275-463c-9456-1a7c97f115f8"),
+//    UUID.fromString("0edc8c31-0d2e-48a8-a746-c37c099e467e")))
+
+  /**
     * Create Payment Method
     */
 //  val paymentMethod: PaymentMethod = PaymentMethod.apply(None, None, None, None, Option.apply("__EXTERNAL_PAYMENT__"), None)
