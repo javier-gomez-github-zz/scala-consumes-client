@@ -21,6 +21,11 @@ object ScalaAppConsumesClient extends App {
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
   /**
+    * Get Permissions
+    */
+//  println("Permissions: " + client.getPermissions())
+
+  /**
     * Unregister Plugin Configuration for Tenant
     */
 //  val response: String = client.unRegisterPluginConfigurationForTenant("pluginName")
