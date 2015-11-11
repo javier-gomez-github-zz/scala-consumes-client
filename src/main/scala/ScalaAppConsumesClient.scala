@@ -1,4 +1,5 @@
 import org.killbill.billing.client.actor.KillBillClient
+import org.killbill.billing.client.model.Tenant
 import spray.http.{MediaType, ContentType, BasicHttpCredentials, HttpHeaders}
 
 /**
@@ -18,6 +19,54 @@ object ScalaAppConsumesClient extends App {
   )
 
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
+
+  /**
+    * Unregister Plugin Configuration for Tenant
+    */
+//  val response: String = client.unRegisterPluginConfigurationForTenant("pluginName")
+//  if (response.contains("200")) {
+//    println(s"Plugin Configuration unregistered succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Registered Plugin Configuration for Tenant
+    */
+//  println("Get Registered Plugin Configuration for Tenant: " + client.getPluginConfigurationForTenant("pluginName"))
+
+  /**
+    * Register Plugin Configuration for Tenant
+    */
+//  println("Register Plugin Configuration: " + client.registerPluginConfigurationForTenant("pluginName", "pluginConfig"))
+
+  /**
+    * Unregister Notification Callback for Tenant
+    */
+//  val response: String = client.unRegisterCallbackNotificationForTenant()
+//  if (response.contains("200")) {
+//    println(s"Notification Callback unregistered succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Get Registered Notification Callback for Tenant
+    */
+//  println("Get Registered Notification Callback for Tenant: " + client.getCallbackNotificationForTenant())
+
+  /**
+    * Register Notification Callback for Tenant
+    */
+//  println("Register Notification Callback: " + client.registerCallbackNotificationForTenant("callback"))
+
+  /**
+    * Create Tenant
+    */
+//  val tenant: Tenant = Tenant.apply(None, None, Option("test"), Option("test"))
+//  println("Create Tenant: " + client.createTenant(tenant))
 
   /**
     * Get Catalog as JSON
