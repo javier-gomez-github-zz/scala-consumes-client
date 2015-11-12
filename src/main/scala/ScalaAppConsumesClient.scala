@@ -1,5 +1,5 @@
 import org.killbill.billing.client.actor.KillBillClient
-import org.killbill.billing.client.model.Tenant
+import org.killbill.billing.client.model.{RoleDefinition, UserRoles, Tenant}
 import spray.http.{MediaType, ContentType, BasicHttpCredentials, HttpHeaders}
 
 /**
@@ -19,6 +19,94 @@ object ScalaAppConsumesClient extends App {
   )
 
   val client: KillBillClient = new KillBillClient(killBillUrl, headers)
+
+  /**
+    * Plugin OPTIONS
+    */
+//  println("Plugin OPTIONS: " + client.pluginOptions("uri"))
+
+  /**
+    * Plugin DELETE
+    */
+//  println("Plugin DELETE: " + client.pluginDelete("uri"))
+
+  /**
+    * Plugin PUT
+    */
+//  println("Plugin PUT: " + client.pluginPut("uri"))
+
+  /**
+    * Plugin POST
+    */
+//  println("Plugin POST: " + client.pluginPost("uri"))
+
+  /**
+    * Plugin HEAD
+    */
+//  println("Plugin HEAD: " + client.pluginHead("uri"))
+
+  /**
+    * Plugin GET
+    */
+//  println("Plugin GET: " + client.pluginGet("uri"))
+
+  /**
+    * Add Role Definition
+    */
+//  val roleDefinition: RoleDefinition = RoleDefinition.apply(Option("role"), Option(List[String]("account:credit")))
+//  val response = client.addRoleDefinition(roleDefinition)
+//  if (response.contains("201")) {
+//    println(s"Role definition added succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Invalidate User
+    */
+//  val response = client.invalidateUser("userName")
+//  if (response.contains("204")) {
+//    println(s"User invalidated succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Update User Roles
+    */
+//  val response = client.updateUserRoles("userName", List[String]("newRoles"))
+//  if (response.contains("200")) {
+//    println(s"User Roles updated succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Update User Password
+    */
+//  val response = client.updateUserPassword("userName", "newPassword")
+//  if (response.contains("200")) {
+//    println(s"User Password updated succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
+
+  /**
+    * Add User Roles
+    */
+//  val roles: List[String] = List[String]("testRole")
+//  val userRoles: UserRoles = UserRoles.apply(Option.apply("userName"), Option.apply("password"), Option.apply(roles))
+//  val response = client.addUserRoles(userRoles)
+//  if (response.contains("201")) {
+//    println(s"User Roles added succesfully")
+//  }
+//  else {
+//    println(s"An error occurred. Message: " + response)
+//  }
 
   /**
     * Get Permissions
