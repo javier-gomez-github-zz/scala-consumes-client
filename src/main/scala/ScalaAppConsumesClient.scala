@@ -1,6 +1,5 @@
 import org.killbill.billing.client.actor.KillBillClient
-import org.killbill.billing.client.model.{RoleDefinition, UserRoles, Tenant}
-import spray.http.{MediaType, ContentType, BasicHttpCredentials, HttpHeaders}
+import spray.http.{BasicHttpCredentials, HttpHeaders}
 
 /**
  * Created by jgomez on 26/10/2015.
