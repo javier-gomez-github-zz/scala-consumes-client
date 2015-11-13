@@ -2,7 +2,7 @@ name := "scala-consumes-client"
 
 version := "1.0"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.7"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
@@ -11,13 +11,8 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= {
-  val sprayVersion = "1.2-RC4"
   Seq(
-    "io.spray" % "spray-can" % sprayVersion,
-    "io.spray" % "spray-routing" % sprayVersion,
-    "io.spray" % "spray-testkit" % sprayVersion,
-    "io.spray" % "spray-client" % sprayVersion,
-    "io.spray" %%  "spray-json" % "1.2.5",
+    "com.typesafe.akka" % "akka-slf4j_2.11" % "2.4.0",
     "org.killbill" %% "killbill-api-client-scala" % "0.1"
   )
 }
