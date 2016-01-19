@@ -1,23 +1,26 @@
-import org.killbill.billing.client.actor.KillBillClient
-import spray.http.{BasicHttpCredentials, HttpHeaders}
+import aria.client.AriaClient
 
 /**
  * Created by jgomez on 26/10/2015.
  */
 object ScalaAppConsumesClient extends App {
 
-  // KillBill API URL (if not specified in the constructor)
-  val killBillUrl = "http://localhost:8080/1.0/kb"
+//  // KillBill API URL (if not specified in the constructor)
+//  val killBillUrl = "http://localhost:8080/1.0/kb"
+//
+//  // KillBill API Headers (if not specified in the constructor)
+//  val headers = List(
+//    HttpHeaders.Authorization.apply(BasicHttpCredentials.apply("admin", "password")),
+//    HttpHeaders.RawHeader.apply("X-Killbill-CreatedBy", "admin"),
+//    HttpHeaders.RawHeader.apply("X-Killbill-ApiKey", "hootsuite"),
+//    HttpHeaders.RawHeader.apply("X-Killbill-ApiSecret", "hootsuite")
+//  )
 
-  // KillBill API Headers (if not specified in the constructor)
-  val headers = List(
-    HttpHeaders.Authorization.apply(BasicHttpCredentials.apply("admin", "password")),
-    HttpHeaders.RawHeader.apply("X-Killbill-CreatedBy", "admin"),
-    HttpHeaders.RawHeader.apply("X-Killbill-ApiKey", "hootsuite"),
-    HttpHeaders.RawHeader.apply("X-Killbill-ApiSecret", "hootsuite")
-  )
+//  val client: KillBillClient = new KillBillClient(killBillUrl, headers)
 
-  val client: KillBillClient = new KillBillClient(killBillUrl, headers)
+  val ariaClient: AriaClient = new AriaClient()
+
+  println("Virtual Datetime: " + ariaClient.getVirtualDateTime())
 
   /**
     * Plugin OPTIONS
