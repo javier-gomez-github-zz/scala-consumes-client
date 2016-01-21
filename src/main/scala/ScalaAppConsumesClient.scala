@@ -1,23 +1,35 @@
-import org.killbill.billing.client.actor.KillBillClient
-import spray.http.{BasicHttpCredentials, HttpHeaders}
+import com.aria.client.AriaClient
+
+import scala.concurrent.{Await, Future}
 
 /**
  * Created by jgomez on 26/10/2015.
  */
 object ScalaAppConsumesClient extends App {
 
-  // KillBill API URL (if not specified in the constructor)
-  val killBillUrl = "http://localhost:8080/1.0/kb"
+  // Aria API URL (if not specified in the constructor)
+  val ariaUrl = "https://habanera.hootsuite.com/api/ws/api_ws_class_dispatcher.php"
 
-  // KillBill API Headers (if not specified in the constructor)
-  val headers = List(
-    HttpHeaders.Authorization.apply(BasicHttpCredentials.apply("admin", "password")),
-    HttpHeaders.RawHeader.apply("X-Killbill-CreatedBy", "admin"),
-    HttpHeaders.RawHeader.apply("X-Killbill-ApiKey", "hootsuite"),
-    HttpHeaders.RawHeader.apply("X-Killbill-ApiSecret", "hootsuite")
-  )
+  val client: AriaClient = new AriaClient(ariaUrl)
 
-  val client: KillBillClient = new KillBillClient(killBillUrl, headers)
+  /**
+    * Get Virtual Datetime
+    */
+//  println("Get Virtual Datetime: "
+//    + client.getVirtualDatetime(4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "get_virtual_datetime"))
+
+  /**
+    * Advance Virtual Datetime
+    */
+//  println("Advance Virtual Datetime: "
+//    + client.advanceVirtualDatetime(1L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "advance_virtual_datetime"))
+
+  /**
+    * Assign Account to a Collections Account group
+    */
+  println("Assign Account to a Collections Account group: "
+    + client.assignCollectionsAccountGroup(1L, "", 10L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK",
+    "assign_collections_acct_group"))
 
   /**
     * Plugin OPTIONS
@@ -790,7 +802,7 @@ object ScalaAppConsumesClient extends App {
    * Get Subscription by Id
    */
 //  println(s"Got Subscription: " + client.getSubscriptionById(UUID.fromString("312df6b3-452e-460d-ab76-2efc37a3f498")).asInstanceOf[Subscription])
-  
+
   /**
    * Transfer Bundle to Account
    */
