@@ -27,9 +27,22 @@ object ScalaAppConsumesClient extends App {
   /**
     * Assign Account to a Collections Account group
     */
-  println("Assign Account to a Collections Account group: "
-    + client.assignCollectionsAccountGroup(1L, "", 10L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK",
-    "assign_collections_acct_group"))
+//  println("Assign Account to a Collections Account group: "
+//    + client.assignCollectionsAccountGroup(21752452L, "", 2L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK",
+//    "assign_collections_acct_group"))
+
+  /**
+    * Get Account Details
+    */
+//  println("Get Account Details: "
+//    + client.getAccountDetails(21752452L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "get_acct_details_all"))
+
+
+
+
+
+
+
 
   /**
     * Plugin OPTIONS
