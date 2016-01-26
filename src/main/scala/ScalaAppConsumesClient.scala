@@ -18,83 +18,84 @@ object ScalaAppConsumesClient extends App {
     * Get Virtual Datetime
     */
 //  println("Get Virtual Datetime: "
-//    + client.getVirtualDatetime(4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "get_virtual_datetime"))
+//    + client.getVirtualDatetime())
 
   /**
     * Advance Virtual Datetime
     */
 //  println("Advance Virtual Datetime: "
-//    + client.advanceVirtualDatetime(1L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "advance_virtual_datetime"))
+//    + client.advanceVirtualDatetime(1L))
 
   /**
     * Assign Account to a Collections Account group
     */
 //  println("Assign Account to a Collections Account group: "
-//    + client.assignCollectionsAccountGroup(21752452L, "", 2L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK",
-//    "assign_collections_acct_group"))
+//    + client.assignCollectionsAccountGroup(21752452L, "", 2L))
 
   /**
     * Get Account Details
     */
 //  println("Get Account Details: "
-//    + client.getAccountDetails(21752452L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "get_acct_details_all"))
+//    + client.getAccountDetails(21752452L))
 
   /**
     * Get Account Plans
     */
 //  println("Get Account Plans: "
-//    + client.getAccountPlans(21752452L, false, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK"))
+//    + client.getAccountPlans(21752452L, false))
 
   /**
     * Get Account Plan History
     */
 //  println("Get Account Plan History: "
-//    + client.getAccountPlanHistory(21752452L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "get_acct_plan_history"))
+//    + client.getAccountPlanHistory(21752452L))
 
   /**
     * Get Rate Schedules for Plan
     */
 //  println("Get Rate Schedules for Plan: "
-//    + client.getRateSchedulesForPlan("", 10122064L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK",
-//    "get_rate_schedules_for_plan"))
+//    + client.getRateSchedulesForPlan("", 10122064L))
 
 
   /**
     * Get Client Plan Services
     */
 //  println("Get Client Plan Services: "
-//    + client.getClientPlanServices("", 10122064L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK",
-//    "get_client_plan_services"))
+//    + client.getClientPlanServices("", 10122064L))
 
   /**
     * Get Client Plan Service Rates
     */
 //  println("Get Client Plan Service Rates: "
-//    + client.getClientPlanServiceRates("", 10122064L, "", 10011883L, "", -1L, 4615000L,
-//    "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "get_client_plan_service_rates"))
+//    + client.getClientPlanServiceRates("", 10122064L, "", 10011883L, "", -1L))
 
   /**
     * Get Account Groups By Account Number
     */
 //  println("Get Account Groups By Account Number: "
-//    + client.getAccountGroupsByAcctNo(21752452L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "get_acct_groups_by_acct"))
+//    + client.getAccountGroupsByAcctNo(21752452L))
 
   /**
     * Get Account Groups By User Id
     */
 //  println("Get Account Groups By User Id: "
-//    + client.getAccountGroupsByUserId("1.trunkd2147559698", 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "get_acct_groups_by_acct"))
+//    + client.getAccountGroupsByUserId("1.trunkd2147559698"))
 
   /**
     * Set Session Id By Account Number
     */
 //  println("Set Session Id By Account Number: "
-//    + client.setSessionByAcctNo(21752452L, 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "set_session"))
+//    + client.setSessionByAcctNo(21752452L))
 
   /**
     * Set Session Id By User Id
     */
 //  println("Set Session Id By User Id: "
-//    + client.setSessionByUserId("1.trunkd2147559698", 4615000L, "HrK4AB56bWxX9tCyGydrQevF7tveFTPK", "set_session"))
+//    + client.setSessionByUserId("1.trunkd2147559698"))
 
+  /**
+    * Validate Session Id By Session Id
+    */
+//  println("Validate Session Id By Session Id: "
+//    + client.validateSessionBySessionId("UXQPR8HQGBJYV7776FWK"))
 }
