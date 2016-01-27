@@ -29,8 +29,9 @@ object ScalaAppConsumesClient extends App {
   /**
     * Assign Account to a Collections Account group
     */
+//  val options = Map("group_no" -> 2L)
 //  println("Assign Account to a Collections Account group: "
-//    + client.assignCollectionsAccountGroup(21752452L, "", 2L))
+//    + client.assignCollectionsAccountGroup(21752452L, options))
 
   /**
     * Get Account Details
@@ -53,21 +54,25 @@ object ScalaAppConsumesClient extends App {
   /**
     * Get Rate Schedules for Plan
     */
+//  val options = Map("plan_no" -> 10122064L)
 //  println("Get Rate Schedules for Plan: "
-//    + client.getRateSchedulesForPlan("", 10122064L))
-
+//    + client.getRateSchedulesForPlan(options))
 
   /**
     * Get Client Plan Services
     */
+//  val options = Map("plan_no" -> 10122064L)
 //  println("Get Client Plan Services: "
-//    + client.getClientPlanServices("", 10122064L))
+//    + client.getClientPlanServices(options))
 
   /**
     * Get Client Plan Service Rates
     */
+//  val options = Map("plan_no" -> 10122064L,
+//  "service_no" -> 10011883L)
+//
 //  println("Get Client Plan Service Rates: "
-//    + client.getClientPlanServiceRates("", 10122064L, "", 10011883L, "", -1L))
+//    + client.getClientPlanServiceRates(options))
 
   /**
     * Get Account Groups By Account Number
@@ -98,4 +103,36 @@ object ScalaAppConsumesClient extends App {
     */
 //  println("Validate Session Id By Session Id: "
 //    + client.validateSessionBySessionId("UXQPR8HQGBJYV7776FWK"))
+
+  /**
+    * Update Master Plan
+    */
+//  val options = Map("master_plan_no" -> 10726068L)
+//  println("Update Master Plan: "
+//    + client.updateMasterPlan(21752452L, options, Map()))
+
+  /**
+    * Update Account Status
+    */
+//  println("Update Account Status: "
+//      + client.updateAccountStatus(21752452L, 10L, Map()))
+
+  /**
+    * Create Account
+    */
+//  val options = Map("master_plan_no" -> 10726068L)
+//  val params = Map("password" -> "Password")
+//  println("Create Account: " + client.createAccount("maguero", 31L, options, params))
+
+  /**
+    * Update Account
+    */
+//    val params = Map("first_name" -> "Javier", "last_name" -> "Gomez")
+//    println("Update Account: " + client.updateAccount(22533826L, params))
+
+  /**
+    * Update Account Contact
+    */
+//    val params = Map("company_name" -> "Hootsuite Inc.")
+//    println("Update Account Contact: " + client.updateAccountContact(22533826L, params))
 }
