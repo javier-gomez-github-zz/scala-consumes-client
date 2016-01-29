@@ -194,6 +194,11 @@ object ScalaAppConsumesClient extends App {
 //  println("Apply Coupon to Account: " + client.applyCouponToAccount(22533826L, "2mnthprohsu50percent", Map()))
 
   /**
+    * Get Account Message
+    */
+//  println("Get Account Message: " + client.getAccountMessage(22533826L, "123456", Map()))
+
+  /**
     * Update Account Supplemental Field
     */
 //  println("Update Account Supplemental Field: " + client.updateAccountSupplementalField(22533826L, "enterprise_affiliate_code", "1234"))
@@ -279,4 +284,72 @@ object ScalaAppConsumesClient extends App {
     * Collect from Account
     */
 //  println("Collect from Account: " + client.collectFromAccount(19132946L, 100, Map()))
+
+  /**
+    * Create Order
+    */
+//  val lineItems = Map("client_sku" -> "12345", "units" -> 2, "amount" -> 123.45)
+//  println("Create Order: " + client.createOrder(21752452L, lineItems, Map()))
+
+  /**
+    * Get Order
+    */
+//  val options = Map("my_order_no" -> 10036177L)
+//  println("Get Order: " + client.getOrder(21752452L, true, 2L, options))
+
+  /**
+    * Get Standing Order
+    */
+//  val options = Map("my_standing_order" -> 10036177L)
+//  println("Get Standing Order: " + client.getStandingOrder(21752452L, options))
+
+  /**
+    * Init Paypal Bill Agreement
+    */
+//  println("Init Paypal Bill Agreement: " + client.initPaypalBillAgreement(19132946L))
+
+  /**
+    * Save Paypal Bill Agreement
+    */
+//  println("Save Paypal Bill Agreement: " + client.savePaypalBillAgreement(19132946L, "1234567"))
+
+  /**
+    * Get Unapplied Service Credits
+    */
+//  println("Get Unapplied Service Credits: " + client.getUnappliedServiceCredits(19132946L))
+
+  /**
+    * Adjust Billing Dates
+    */
+//  println("Adjust Billing Dates: " + client.adjustBillingDates(19132946L, 3, 1, "Comments"))
+
+  /**
+    * Generate Invoice
+    */
+//  println("Generate Invoice: " + client.generateInvoice(19132946L, Map()))
+
+  /**
+    * Set Tax Exemption Level
+    */
+//  println("Set Tax Exemption Level: " + client.setTaxExemptStatus(19132946L, 2L))
+
+  /**
+    * Get Tax Exemption Level
+    */
+//  println("Get Tax Exemption Level: " + client.getTaxExemptStatus(19132946L))
+
+  /**
+    * Cancel Unconsumed Coupon Credit
+    */
+//  println("Cancel Unconsumed Coupon Credit: " + client.cancelUnconsumedCouponCredit(19132946L, "2mnthprohsu50percent"))
+
+  /**
+    * Get Plans
+    */
+  println("Get Plans: " + client.getPlans(true, Map()))
+
+  /**
+    * Get Plan
+    */
+//  println("Get Plan: " + client.getPlan(10726068L, true))
 }
