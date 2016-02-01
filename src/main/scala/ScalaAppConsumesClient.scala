@@ -288,7 +288,10 @@ object ScalaAppConsumesClient extends App {
   /**
     * Create Order
     */
-//  val lineItems = Map("client_sku" -> "12345", "units" -> 2, "amount" -> 123.45)
+//  val client_sku_map = Map(0 -> "FacebookPromotedPost", 1 -> "FacebookPromotedPost")
+//  val units_map = Map(0 -> 1, 0 -> 4)
+//  val amount_map = Map(0 -> 110.20, 1 -> 25.34)
+//  val lineItems = Map("client_sku" -> client_sku_map, "units" -> units_map, "amount" -> amount_map)
 //  println("Create Order: " + client.createOrder(21752452L, lineItems, Map()))
 
   /**
@@ -346,10 +349,15 @@ object ScalaAppConsumesClient extends App {
   /**
     * Get Plans
     */
-  println("Get Plans: " + client.getPlans(true, Map()))
+//  println("Get Plans: " + client.getPlans(false, Map()))
 
   /**
     * Get Plan
     */
 //  println("Get Plan: " + client.getPlan(10726068L, true))
+
+  /**
+    * Get Available Child Plans
+    */
+//  println("Get Available Child Plans: " + client.getAvailableChildPlans(10726068L, true))
 }
